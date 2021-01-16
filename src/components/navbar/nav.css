@@ -1,0 +1,68 @@
+
+.Nav {
+
+  left: 0px;
+  right: 0px;
+  top: 4.11%;
+  bottom: 87.89%;
+  margin-top: 0%;
+  height: 72px;
+  display:flex;
+  justify-content: flex-end;
+}
+.Nav_Background {
+ 
+  left: 0px;
+  right: 0px;
+  top: 0%;
+  bottom: 0%;
+
+  opacity: 0.1;
+}
+
+.Flex {
+
+  width: 71.14px;
+  height: 24px;
+
+  font-size: x-large;
+  font-weight: bolder;
+
+  color: #16445e;
+}
+.Mute {
+
+  width: 56px;
+  height: 36px;
+  left: 1360px;
+  top: 18px;
+}
+.Volume {
+ 
+  width: 24px;
+  height: 24px;
+  left: 16px;
+  top: 6px;
+}
+.Vector {
+ 
+  left: 8.33%;
+  right: 54.17%;
+  top: 20.83%;
+  bottom: 20.83%;
+  
+  border: 2px solid #16445E;
+  
+}
+.Rectangle {
+
+  width: 56px;
+  height: 36px;
+  left: 0px;
+  top: 0px;
+
+  background: linear-gradient(180deg, #ffffff 0%, #e5e5e5 100%);
+  border: 1px solid rgba(22, 68, 94, 0.1);
+  box-shadow: 0px 2px 8px rgba(22, 68, 94, 0.12);
+  border-radius: 20px;
+}

@@ -1,0 +1,25 @@
+.Landscape {
+  position: absolute;
+  width: 1443px;
+  height: 416px;
+  left: -3px;
+  top: 486px;
+}
+.Union {
+  position: absolute;
+  left: 0.92px;
+  right: 0px;
+  top: 54.44%;
+  bottom: -0.22%;
+  background: linear-gradient(180deg, #b1e8e1 8.73%, #59bc8c 100%);
+}
+.Substract {
+  position: absolute;
+  left: -3px;
+  right: 4px;
+  top: 54%;
+  bottom: 29.56%;
+
+  background: #c5fcf5;
+  filter: blur(10px);
+}
