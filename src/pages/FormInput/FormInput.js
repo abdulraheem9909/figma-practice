@@ -66,6 +66,7 @@ const FormInput = (props) => {
         <Form>
           <div className="grid-container">
             <div className="nav"></div>
+            <div className="title-mob">Felix</div>
             <div className="icon">
               <div className="cross" onClick={crossed}>
                 <div
@@ -82,7 +83,7 @@ const FormInput = (props) => {
             </div>
             <div className="title-form">
               {" "}
-              Your ears will love you. Complete the Details below:
+              Your ears will love you . Complete the Details below:
             </div>
 
             <div className="nickname">
@@ -99,8 +100,8 @@ const FormInput = (props) => {
             </div>
 
             <div className="pagination">
-              <div>Back</div>
-              <div>1/3</div>
+              <div  onClick={crossed}><div style={{display:"flex", justifyContent:"center", alignItems:"center" ,height:"7vh" }}>Back</div></div>
+              <div><div style={{display:"flex", justifyContent:"center", alignItems:"center" ,height:"7vh" }}>1/3</div></div>
               <Button normal onClick={()=>{props.history.push("/details/audio")}}>Next</Button>
             </div>
           </div>

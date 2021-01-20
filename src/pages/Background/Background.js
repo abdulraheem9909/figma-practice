@@ -5,6 +5,8 @@ import icon from "../../assets/icon.svg";
 import Mainbutton from "../../components/button/MainButton";
 import MainInput from "../../components/input/MainInput";
 import { connect } from "react-redux";
+import { Formik, Form } from "formik";
+import * as Yup from "yup";
 
 const Background = (props) => {
   const clickHandler = () => {
@@ -12,6 +14,7 @@ const Background = (props) => {
     props.history.push("/details");
   };
   return (
+    
     <div className="background-container">
       <div className="sun">
         <div className="Ellipse3"></div>

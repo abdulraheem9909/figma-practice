@@ -22,6 +22,11 @@
 
   color: #16445e;
 }
+.title-mob{
+  display: none;
+    }
+
+
 
 .nickname {
   grid-area: 6 / 2 / 8 / 10;
@@ -33,7 +38,7 @@
 .username {
   grid-area: 8 / 2 / 10 / 10;
   width: 100%;
-  
+
   height: 12vh;
 }
 
@@ -45,7 +50,7 @@
 .phone {
   grid-area: 10 / 3 / 12 / 10;
   width: 100%;
-  
+
   height: 12vh;
 }
 
@@ -55,13 +60,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   height: 12vh;
 }
 
 .nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   width: 100%;
   grid-area: 1 / 1 / 3 / 11;
 }
@@ -81,3 +86,60 @@
   border-radius: 50%;
 }
 
+@media (max-width: 850px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    grid-area: 1 / 1 / 3 / 11;
+  }
+  .icon {
+    display: none;
+  }
+  .cross {
+    display: none;
+  }
+  .title-mob{
+    grid-area: 1 / 5 / 3 / 7;
+    width: 100%;
+    height: 12vh;
+    line-height: 1.6;
+    font-family: "GT Haptik";
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 24px;
+    line-height: 1;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: #16445e;
+    }
+    .title-form {
+      grid-area: 4 / 2 / 6 / 10;
+    
+      width: 100%;
+      height: 12vh;
+      line-height: 1.6;
+      font-family: "GT Haptik";
+      font-style: normal;
+      font-weight: bolder;
+      font-size: 24px;
+     
+    
+      color: #16445e;
+    }
+    .pagination {
+      grid-area: 16 / 1 / 18 / 11; 
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      background: linear-gradient(180deg, #FFFFFF 0%, #E5E5E5 100%);
+      border: 1px solid rgba(22, 68, 94, 0.1);
+      box-shadow: 0px 2px 8px rgba(22, 68, 94, 0.12);
+      border-radius: 16px;
+      height: 12vh;
+    }
+
+}

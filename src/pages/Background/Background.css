@@ -114,7 +114,7 @@
   font-weight: 900;
   font-size: 4vw;
 
-  line-height: 72px;
+  line-height: 1;
   color: #16445e;
 }
 
@@ -207,15 +207,15 @@ input {
     grid-area: 2 / 1 / 4 / 2;
 
     display: block;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-
+    padding-top: 50px;
     font-family: GT Haptik;
     font-style: normal;
     font-weight: bolder;
     font-size: 4.5vh;
 
-    line-height: 72px;
+    line-height:1;
     color: #16445e;
   }
 
