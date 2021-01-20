@@ -1,23 +1,24 @@
 .grid-container {
   display: grid;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
+  background: linear-gradient(189.21deg, #c4f4ff 1.67%, #e7fbff 68.05%);
 }
 
 .title-form {
   grid-area: 4 / 2 / 6 / 10;
 
-  width: 70vw;
+  width: 100%;
   height: 12vh;
   line-height: 1.6;
-  font-family: 'GT Haptik';
+  font-family: "GT Haptik";
   font-style: normal;
   font-weight: bolder;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 1;
 
   color: #16445e;
 }
@@ -25,35 +26,36 @@
 .nickname {
   grid-area: 6 / 2 / 8 / 10;
 
-  width: 80vw;
+  width: 100%;
   height: 12vh;
 }
 
 .username {
   grid-area: 8 / 2 / 10 / 10;
-
-  width: 80vw;
+  width: 100%;
+  
   height: 12vh;
 }
 
 .code {
   grid-area: 10 / 2 / 12 / 3;
+  width: 100%;
 }
 
 .phone {
   grid-area: 10 / 3 / 12 / 10;
-
-  width: 70vw;
+  width: 100%;
+  
   height: 12vh;
 }
 
 .pagination {
   grid-area: 14 / 2 / 16 / 10;
-  background-color: grey;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80vw;
+  
   height: 12vh;
 }
 
@@ -78,3 +80,4 @@
   background-color: white;
   border-radius: 50%;
 }
+

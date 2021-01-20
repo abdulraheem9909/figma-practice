@@ -31,7 +31,7 @@ const MyTextInput = ({ label, ...props }) => {
       <Label htmlFor={props.id || props.name}>{label}</Label>
       <MainInput {...field} {...props} />
       {meta.touched && meta.error ? (
-        <div className="error">{meta.error}</div>
+        <div style={{color:"red"}}>{meta.error}</div>
       ) : null}
     </div>
   );

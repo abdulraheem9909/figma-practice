@@ -5,8 +5,15 @@ import Select from "../../components/FormikForm/select";
 import Input from "../../components/FormikForm/text";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
+import Button from "../../components/button/MainButton"
+import { connect } from "react-redux";
 
-const FormInput = () => {
+const FormInput = (props) => {
+  const crossed= ()=>{
+    props.crossed();
+    props.history.push("/");
+
+  }
   return (
     <React.Fragment>
       <Formik
@@ -60,7 +67,7 @@ const FormInput = () => {
           <div className="grid-container">
             <div className="nav"></div>
             <div className="icon">
-              <div className="cross">
+              <div className="cross" onClick={crossed}>
                 <div
                   style={{
                     display: "flex",
@@ -85,7 +92,7 @@ const FormInput = () => {
               <Input name="userName" type="text" label="Username" />
             </div>
             <div className="code">
-              <Select label="Phone " name="code" />
+              <Select label="Phone " name="code"  />
             </div>
             <div className="phone">
               <Input name="phone" type="tel" label="Number" />
@@ -94,7 +101,7 @@ const FormInput = () => {
             <div className="pagination">
               <div>Back</div>
               <div>1/3</div>
-              <button>Next</button>
+              <Button normal onClick={()=>{props.history.push("/details/audio")}}>Next</Button>
             </div>
           </div>
         </Form>
@@ -103,4 +110,11 @@ const FormInput = () => {
   );
 };
 
-export default FormInput;
+const mapDispatchToProps = (dispatch) => {
+  return {
+    // dispatching plain actions
+    crossed: () => dispatch({ type: "CROSSED" }),
+  };
+};
+
+export default connect(null,mapDispatchToProps)(FormInput);

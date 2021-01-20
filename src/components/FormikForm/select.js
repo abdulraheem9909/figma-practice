@@ -36,7 +36,7 @@ const MySelect = ({ children, label, ...props }) => {
         <option value="+255">+255</option>
       </SelectInput>
       {meta.touched && meta.error ? (
-        <div className="error">{meta.error}</div>
+        <div style={{color:"red"}}>{meta.error}</div>
       ) : null}
     </div>
   );

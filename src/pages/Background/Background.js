@@ -4,10 +4,15 @@ import image from "../../assets/Felix.png";
 import icon from "../../assets/icon.svg";
 import Mainbutton from "../../components/button/MainButton";
 import MainInput from "../../components/input/MainInput";
+import { connect } from "react-redux";
 
-const Background = () => {
+const Background = (props) => {
+  const clickHandler = () => {
+    props.clicked();
+    props.history.push("/details");
+  };
   return (
-    <div className="grid-container">
+    <div className="background-container">
       <div className="sun">
         <div className="Ellipse3"></div>
         <div className="Ellipse2"></div>
@@ -27,7 +32,7 @@ const Background = () => {
         <MainInput />
       </div>
       <div className="button">
-        <Mainbutton onClick={alert}>join now</Mainbutton>
+        <Mainbutton onClick={clickHandler}>join now</Mainbutton>
       </div>
       <div className="title">An Audio Assistance for Happiness</div>
       <div className="desc">
@@ -46,5 +51,11 @@ const Background = () => {
     </div>
   );
 };
+const mapDispatchToProps = (dispatch) => {
+  return {
+    // dispatching plain actions
+    clicked: () => dispatch({ type: "CLICKED" }),
+  };
+};
 
-export default Background;
+export default connect(null,mapDispatchToProps)(Background);

@@ -1,4 +1,4 @@
-.grid-container {
+.background-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -76,6 +76,7 @@
   top: 0;
   background: #c5fcf5;
   filter: blur(10px);
+  z-index: 2;
 }
 
 .image {
@@ -178,7 +179,7 @@ input {
   height: "48px";
 }
 @media (max-width: 850px) {
-  .grid-container {
+  .background-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -242,13 +243,24 @@ input {
   .content {
     display: none;
   }
-  .icon {
-    display: none;
-  }
+
   .desc {
     display: none;
   }
   .flex {
+    display: none;
+  }
+  .icon {
+    display: none;
+  }
+
+  .volume {
+    display: none;
+  }
+  .vector {
+    display: none;
+  }
+  .rectangle {
     display: none;
   }
 }
