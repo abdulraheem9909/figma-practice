@@ -61,6 +61,9 @@ const FormInput = (props) => {
             alert(JSON.stringify(values, null, 2));
             setSubmitting(false);
           }, 400);
+
+          props.history.push("/details/audio");
+          
         }}
       >
         <Form>
@@ -102,7 +105,7 @@ const FormInput = (props) => {
             <div className="pagination">
               <div  onClick={crossed}><div style={{display:"flex", justifyContent:"center", alignItems:"center" ,height:"7vh" }}>Back</div></div>
               <div><div style={{display:"flex", justifyContent:"center", alignItems:"center" ,height:"7vh" }}>1/3</div></div>
-              <Button normal onClick={()=>{props.history.push("/details/audio")}}>Next</Button>
+              <Button normal >Next</Button>
             </div>
           </div>
         </Form>

@@ -6,7 +6,7 @@ import styled from "styled-components";
 const SelectInput = styled.select`
 border: none;
 outline: none;
-width: 100%;
+
 height: 45px;
 
 background: linear-gradient(180deg, #ffffff 0%, #e5e5e5 100%);

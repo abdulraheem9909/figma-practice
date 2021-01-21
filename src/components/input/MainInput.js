@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useField } from "formik";
 
 const MainInput = styled.input`
 
@@ -22,8 +23,19 @@ const MainInput = styled.input`
 `;
 
 
-const Input = () => {
-  return <MainInput type="text" placeholder="Enter your email address" required></MainInput>;
-};
 
-export default Input;
+const MyTextInput = ({ label, ...props }) => {
+  const [field, meta] = useField(props);
+  console.log("field",meta);
+  return (
+    <div style={{ display: "flex", flexDirection: "column", height: "100%", width:"100%" }}>
+      <label htmlFor={props.id || props.name}>{label}</label>
+      <MainInput {...field} {...props} />
+      {meta.touched && meta.error ? (
+        <div style={{color:"red"}}>{meta.error}</div>
+      ) : null}
+    </div>
+  );
+};
+export default MyTextInput;
+

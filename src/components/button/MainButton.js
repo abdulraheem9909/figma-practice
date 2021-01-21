@@ -42,6 +42,10 @@ const MainButton = styled.button`
           border-radius: 16px;
           cursor: pointer;
           outline: none;
+
+          @media (max-width: 850px) {
+            height: 6vh;
+          }
         `};
     
   
