@@ -34,7 +34,7 @@ const SignupForm = () => {
 
           jobType: Yup.string()
             .oneOf(
-              ["designer", "development", "product", "other"],
+              ["+92", "development", "product", "other"],
               "Invalid Job Type"
             )
             .required("Required"),
@@ -71,9 +71,9 @@ const SignupForm = () => {
           />
           <Select label="Job Type" name="jobType" />
 
-          <Radio name="selectRadio" value="op1" id="op1" />
+          <Radio name="selectRadio" value="op1" id="op1" label="Iphone"  />
 
-          <Radio name="selectRadio" value="op2" id="op2" />
+          <Radio name="selectRadio" value="op2" id="op2" label="Android" />
           <Checkbox name="acceptedTerms">
             I accept the terms and conditions
           </Checkbox>

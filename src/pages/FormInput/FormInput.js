@@ -37,24 +37,7 @@ const FormInput = (props) => {
           code: Yup.string()
             .oneOf(["+92", "+1", "+95", "+004", "+225"], "Invalid Code")
             .required("Required"),
-          // lastName: Yup.string()
-          //   .max(20, "Must be 20 characters or less")
-          //   .required("Required"),
-          // email: Yup.string()
-          //   .email("Invalid email address")
-          //   .required("Required"),
-          // selectRadio: Yup.string().required("Required"),
-
-          // jobType: Yup.string()
-          //   .oneOf(
-          //     ["designer", "development", "product", "other"],
-          //     "Invalid Job Type"
-          //   )
-          //   .required("Required"),
-
-          // acceptedTerms: Yup.boolean()
-          //   .required("Required")
-          //   .oneOf([true], "You must accept the terms and conditions.")
+       
         })}
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
