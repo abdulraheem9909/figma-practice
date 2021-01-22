@@ -6,6 +6,6 @@
   input:checked + Div  {
    background: linear-gradient(180deg, #5992FF 0%, #2262DD 100%);
  }
- /* label:checked + span {
+ input:checked + span {
    color: #F6F6F6;
- } */
+ }

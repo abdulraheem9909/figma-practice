@@ -4,7 +4,7 @@
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
 
 .sun {
@@ -91,16 +91,17 @@
   display: flex;
   align-items: center;
   border-radius: 20px;
-  padding-left: 50px;
+  margin: 15px;
   z-index: 1;
-  padding-top: 40px;
+  padding-top: 30px;
+ 
   width: 40vw;
 }
 .button {
   grid-area: 9 / 2 / 11 / 6;
   display: flex;
- 
-  padding-left: 50px;
+  margin: 15px;
+  
   z-index: 1;
   width: 40vw;
 }
@@ -143,7 +144,7 @@
 
   color: #16445e;
 }
-.icon {
+.icon-main{
   grid-area: 1 / 10 / 2 / 11;
   display: flex;
   justify-content: flex-end;
@@ -154,6 +155,11 @@
   height: 24px;
   left: 16px;
   top: 6px;
+}
+.login-containner{
+  grid-area: 7/2/11/6;
+  display: flex;
+  flex-direction: column;
 }
 .vector {
   align-items: center;
@@ -228,7 +234,7 @@ input {
 
     width: 80vw;
     align-items: flex-start;
-    padding-left: 40px;
+    margin: 10px;
     z-index: 2;
   }
 
@@ -238,9 +244,8 @@ input {
     flex: 1;
     justify-content: flex-end;
     width: 80vw;
-    padding-top: 20px;
-    padding-left: 40px;
-   
+    margin: 10px;;
+    padding-bottom: 50px;
   }
 
   .content {
@@ -304,5 +309,20 @@ input {
   
     background: radial-gradient(50% 50% at 50% 50%, #ffdbba 0%, #ffba7a 100%);
     opacity: 0.1;
+  }
+
+  .login-containner{
+    grid-area:11/1/13/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  @media (max-width: 360px) {
+    .button {
+    
+      padding-bottom: 0px;
+    }
   }
 }

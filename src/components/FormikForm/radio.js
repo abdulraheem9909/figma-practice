@@ -4,17 +4,6 @@ import "./radio.css";
 import { useField } from "formik";
 
 import styled from "styled-components";
-const RadioButton = styled.input`
-  display: none;
-  RadioButton:checked + label {
-    background-color: yellow;
-  }
-
-  @media (max-width: 850px) {
-    height: 7vh;
-  }
-`;
-
 
 const Div = styled.div`
   background: linear-gradient(180deg, #ffffff 0%, #e5e5e5 100%);
@@ -24,12 +13,12 @@ const Div = styled.div`
   display: flex;
   justify-content: "center";
   aligh-item: "center";
-  width: 10vw;
-  height: 48px;
-
-  @media (max-width: 850px) {
-    width: 10vh;
-    
+  width: 105px;
+  height: 58px;
+  margin:5px;
+  margin-right:25px;
+   @media (max-width: 1050px) {
+    margin-right: 15px;
   }
 `;
 
@@ -41,7 +30,8 @@ const Radio = ({ ...props }) => {
     <div>
       <input className="Input" type="radio" {...field} {...props} />
       <Div>
-        <label className="Label"
+        <label
+          className="Label"
           style={{
             display: "flex",
             justifyContent: "center",
@@ -62,7 +52,7 @@ const Radio = ({ ...props }) => {
               color: "#16445E",
             }}
           >
-           {props.label}
+            {props.label}
           </span>
         </label>
       </Div>

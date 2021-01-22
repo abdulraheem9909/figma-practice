@@ -28,7 +28,7 @@ const MyTextInput = ({ label, ...props }) => {
   const [field, meta] = useField(props);
   console.log("field",meta);
   return (
-    <div style={{ display: "flex", flexDirection: "column", height: "100%", width:"100%" }}>
+    <div style={{ display: "flex", flexDirection: "column",  width:"100%" }}>
       <label htmlFor={props.id || props.name}>{label}</label>
       <MainInput {...field} {...props} />
       {meta.touched && meta.error ? (

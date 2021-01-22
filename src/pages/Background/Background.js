@@ -43,7 +43,7 @@ const Background = (props) => {
             </div>
             <div className="navbar"></div>
             <div className="flex">Flex</div>
-            <div className="icon">
+            <div className="icon-main">
               <div className="rectangle">
                 <img src={icon} alt="" />
                 <div className="volumn"></div>
@@ -51,16 +51,17 @@ const Background = (props) => {
             </div>
 
             <div className="content"></div>
-            <div className="email">
-            
-              <Input
-                name="email"
-                type="email"
-                placeholder="Enter you email address"
-              />
-            </div>
-            <div className="button">
-              <Mainbutton>join now</Mainbutton>
+            <div className="login-containner">
+              <div className="email">
+                <Input
+                  name="email"
+                  type="email"
+                  placeholder="Enter you email address"
+                />
+              </div>
+              <div className="button">
+                <Mainbutton>join now</Mainbutton>
+              </div>
             </div>
             <div className="title">An Audio Assistance for Happiness</div>
             <div className="desc">

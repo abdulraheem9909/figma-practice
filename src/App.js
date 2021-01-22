@@ -13,7 +13,7 @@ const App = (props) => {
   console.log("redux state",props.show);
   return (
     <div className="App">
-      <Route  path="/" component={Audio} />
+      <Route  path="/" component={Background} />
      {props.show && <SideDrawer />}
 
       {/*<Background/>
